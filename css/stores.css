@@ -1,18 +1,43 @@
+ #header {
+     padding-top: 10%;
+     padding-left: 10%;
+     padding-right: 5%;
+     border: dashed;
+ } 
+ 
  #main {
-    
+    float: left;
+    position: static;
+    width: 50%;
+    height: 30%;
  }
 
+.imgcontainer {
+    position:relative;
+    margin-left: 52%;
+    padding-bottom: 5%;
+    width: 20%;
+    height: 10%;
+    border: dashed;
+}
+
  #top {
-     position: absolute;
-     left: 0px;
-     right: 0px;
-     z-index: initial;
-     border: dashed;
+    margin-left: 2%;
+    padding-bottom: 30%;
+    width: 90%;
+    height: 60%;
  }
 
  #bottom {
-    position: absolute;
-    left: 0px;
-    right: 0px;
-    z-index: inherit;
+    padding-top: 14%;
+    margin-left: 2%;
+    width: 90%;
+    height: 60%;
+}
+
+.storeinfo {
+    float: right;
+    margin-top: -43%;
+    padding-right: 10%;
+    font-size-adjust: 10%;
 }
