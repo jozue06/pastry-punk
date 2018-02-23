@@ -1,1 +1,18 @@
- 
+ #main {
+    
+ }
+
+ #top {
+     position: absolute;
+     left: 0px;
+     right: 0px;
+     z-index: initial;
+     border: dashed;
+ }
+
+ #bottom {
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    z-index: inherit;
+}
