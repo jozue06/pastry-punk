@@ -1,9 +1,9 @@
  #header {
-     padding-top: 10%;
-     padding-left: 10%;
-     padding-right: 5%;
-     border: dashed;
- } 
+    margin: 0 auto;
+    width: 90%; 
+    float: center;
+    padding-top: 5%;
+ }
  
  #main {
     float: left;
@@ -18,26 +18,44 @@
     padding-bottom: 5%;
     width: 20%;
     height: 10%;
-    border: dashed;
 }
 
  #top {
-    margin-left: .5%;
+    margin-left: .3%;
+    padding-right: -22%;
     padding-bottom: 30%;
-    width: 90%;
+    width: 80%;
     height: 60%;
  }
 
  #bottom {
-    margin-left: .5%;
-    padding-top: 17%;
-    width: 90%;
+    margin-left: .3%;
+    padding-top: 31%;
+    width: 80%;
     height: 60%;
 }
 
 .storeinfo {
     float: right;
     margin-top: -42%; 
-    padding-right: 15%;
+    padding-right: 20%;
+    padding-bottom: 20%;
     font-size: .8vw;
+    border: dashed;
+}
+
+
+.mapcontact {
+     margin: 0 auto;
+     width: 90%;
+     float: center; 
+     border: dashed;
+}
+
+#map {
+    float: center;
+    width= 30%; 
+    height= 45%; 
+    frameborder= 0; 
+    style= border:1 ;
 }
