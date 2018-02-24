@@ -30,40 +30,22 @@
   text-transform: uppercase;
 }
 
-#curators{
-  display: inline-block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 75%;
-}
-
 .column {
   float: left;
-  width: 33.33%;
+  width: 37.5%;
   padding-top: 20px;
   margin-left: 12.5%;
 }
-
-.row:after {
-  content: "";
+/* .column img{
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+} */
+.row{
   display: table;
   clear: both;
   padding-top: 10px;
+  margin-right: 12.5%;
 }
 
-column {
-  float: left;
-}
 
-.left, right {
-  width: 25%;
-}
-
-.middle {
-  width: 50%;
-}
-
-  /* .column h2{
-    font-size: 18px;
-    font-weight: bold;
-  } */
