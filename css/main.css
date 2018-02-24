@@ -61,10 +61,14 @@ body {
 }
 
 #featureImage {
-  margin: auto;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  width: 75%;
+  padding: 20px;
 }
 
-main {
+/* main {
   width: 960px;
   margin: 30px auto;
 }
@@ -88,7 +92,7 @@ section div {
   float: left;
   padding-left: 30px;
   margin-bottom: 30px;
-}
+} */
 
 
 /* Search Button */
