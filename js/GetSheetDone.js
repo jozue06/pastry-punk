@@ -254,16 +254,16 @@ function attachEvents() {
 
 
 
-var formEle = document.getElementById('search');
+// var formEle = document.getElementById('search');
 
-function eventListenFunction(event){
+// function eventListenFunction(event){
 
-  event.preventDefault();
+//   event.preventDefault();
 
-  var searchKey = document.getElementById('search').value;
+//   var searchKey = document.getElementById('search').value;
 
-  console.log(searchKey);
+//   console.log(searchKey);
 
-}
+// }
 
-formEle.addEventListener('submit',(eventListenFunction));
+// formEle.addEventListener('submit',(eventListenFunction));
