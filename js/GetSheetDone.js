@@ -250,3 +250,20 @@ function attachEvents() {
     });
   };
 }
+
+
+
+
+var formEle = document.getElementById('search');
+
+function eventListenFunction(event){
+
+  event.preventDefault();
+
+  var searchKey = document.getElementById('search').value;
+
+  console.log(searchKey);
+
+}
+
+formEle.addEventListener('submit',(eventListenFunction));
