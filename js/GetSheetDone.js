@@ -225,7 +225,7 @@
       /***/ })
     /******/ ])['default'];
 });
-//# sourceMappingURL=GetSheetDone.js.map
+
 var allStores = [];
 let key,
   sheetNum;
@@ -239,13 +239,9 @@ function attachEvents() {
   onload = function(ev) {
     ev.preventDefault();
     readValues();
-    // console.log(key, sheetNum);
-
     var promise = GetSheetDone.labeledCols(key, sheetNum);
 
     promise.then((data) => {
-    //   console.log('Data');
-    //   console.log(data);
       allStores.push(data);
     });
   };
@@ -253,17 +249,34 @@ function attachEvents() {
 
 
 
+var formEle = document.getElementById('search');
 
-// var formEle = document.getElementById('search');
+function eventListenFunction(event) {
 
-// function eventListenFunction(event){
+  event.preventDefault();
 
-//   event.preventDefault();
+  var searchKey = event.target.searchKey.value;
+  for (var i = 0; i < allStores[0].data.length; i++){
+    if (searchKey == allStores[0].data[i].name){
+      console.log('true ' + searchKey);
+      var strItems = JSON.stringify(searchKey);
+      localStorage.setItem('searchKey', strItems);
+    }
+  }
+  console.log('Your search was ' + searchKey);
+  console.log(searchKey);
+  event.target.searchKey.value = null;
+  window.location.replace('stores.html');
+  
+  return searchKey;
 
-//   var searchKey = document.getElementById('search').value;
+}
 
-//   console.log(searchKey);
+formEle.addEventListener('submit', (eventListenFunction));
 
-// }
 
-// formEle.addEventListener('submit',(eventListenFunction));
+// var results = document.getElementById('results');
+
+// var strItems = localStorage.getItem('searchKey');
+
+// var parse = JSON.parse('searchKey');
