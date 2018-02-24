@@ -71,9 +71,27 @@ body {
   }
 }
 
-button{
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
+/* Next & previous buttons */
+.right, .left {
+  cursor: pointer;
+  width: auto;
+  padding: 5px;
+  color: gray;
+  font-weight: bold;
+  font-size: 18px;
+}
 
+.right{
+  float: right;
+  margin-top: -22.5%;
+}
+
+.left{
+  float: left;
+  margin-top: -22.5%;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.left:hover, .right:hover {
+  background-color: rgba(0,0,0,0.8);
 }
