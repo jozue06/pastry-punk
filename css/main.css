@@ -1,7 +1,7 @@
 body {
   width: 95%;
   margin: 0 auto;
-  font-family: Circular,"Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-family: Helvetica,Arial,sans-serif;
 }
 
 /* Style the header with a grey background and some padding */
@@ -17,10 +17,6 @@ body {
   height: auto;
 }
 
-#aboutUs {
-  background-color: black;
-  color: #ffccff;
-}
 /* Style the header links */
 .header a {
   float: left;
@@ -137,7 +133,7 @@ button {
   padding: 10px 30px;
   background: rgb(2, 0, 1);
   color:rgb(252, 183, 229);
-  border-radius: 3px;
+  border-radius: 4px;
   font-size: 18px;
   margin-top: 10px;
   transition: 350ms;
