@@ -4,7 +4,7 @@
 
 /* Add a gray background color with some padding */
 body {
-  font-family: Arial;
+  font-family: Helvetica, sans-serif;
   padding: 20px;
   background: #f1f1f1;
   width: 95%;
@@ -18,7 +18,14 @@ body {
   font-size: 40px;
   text-align: center;
   background: white;
+  color: white;
   text-transform: uppercase;
+  font-family: 'Chewy', cursive;
+  background: url("https://c2.staticflickr.com/6/5287/5373093007_8284a81f09_b.jpg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 
 

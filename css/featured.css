@@ -4,7 +4,7 @@
 
 /* Add a gray background color with some padding */
 body {
-  font-family: Arial;
+  font-family: Helvetica, sans-serif;
   padding: 20px;
   background: #f2f2f2;
   width: 95%;
@@ -19,6 +19,7 @@ body {
   text-align: center;
   background: white;
   text-transform: uppercase;
+  font-family: 'Chewy', cursive;
 }
 
 /* Create two unequal columns that floats next to each other */
