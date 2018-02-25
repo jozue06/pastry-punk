@@ -257,10 +257,11 @@ function eventListenFunction(event) {
 
   var searchKey = event.target.searchKey.value;
   for (var i = 0; i < allStores[0].data.length; i++){
-    if (allStores[0].data[i].name === searchKey){
+    if (allStores[0].data[i].name.includes(searchKey) || allStores[0].data[i].locationtype.includes(searchKey) || allStores[0].data[i].neighborhood.includes(searchKey)){
       console.log('true ' + searchKey);
-      var strItems = JSON.stringify(searchKey);
+      var strItems = JSON.stringify(allStores[0].data[i]);
       localStorage.setItem('searchKey', strItems);
+      window.location.replace('stores.html');
     }
   }
 
@@ -286,7 +287,7 @@ function eventListenFunction(event) {
   console.log('Your search was ' + searchKey);
   console.log(searchKey);
   event.target.searchKey.value = null;
-  window.location.replace('stores.html');
+ 
 
   return searchKey;
 
