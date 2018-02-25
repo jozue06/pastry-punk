@@ -3,26 +3,36 @@
     <head>
         <title>Pastry Punk - Main</title>
         <link rel="stylesheet" type="text/css" href="css/main.css" />
+        <link rel="stylesheet" type="text/css" href="css/nav.css" />
     </head>
     <body>
         <header>
             <div class="header">
+                <!-- <a href="index.html"> -->
                 <img id=logo src="images/logomakr_pastrypunkb_1024.png" alt="Pastry Punk Logo">
+                <!-- </a> -->
                 <div class="header-right">
                     
-                    <a href="#">Home</a>
+                    <a href="index.html">Home</a>
 
-                    <a href="#">Blog</a>
+                    <a href="feature-index.html">Blog</a>
                 
-                    <a href="#">About Us</a>
+                    <a href="about.html">About Us</a>
                     
-                    <a href="#">Search</a>
+                    <a href="search.html">Search</a>
                 </div>
             </div>
         </header>
         <main>
 
-            <img id ="featureImage" src="http://placehold.it/800x400/000000">
+            <img class="main" src="http://placehold.it/900x400/f2f2f2">
+
+            <img class="main" src="http://placehold.it/900x400/ffe6ff">
+
+            <img class="main" src="http://placehold.it/900x400/ffccff">
+
+            <button class="left" onclick="plusDivs(-1)">&#10094;</button>
+            <button class="right" onclick="plusDivs(+1)">&#10095;</button>
 
                 <form action="">
                     <input type="text" name="search" placeholder="Bakery or Pastry..">
@@ -33,6 +43,7 @@
         <footer>
             <p class="copyright">&copy; 2018 Pastry Punk. All Rights Reserved.</p>
         </footer>
+        <script src="js/slide.js"></script>
     </body>
     
     </html>
