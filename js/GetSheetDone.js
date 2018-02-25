@@ -257,17 +257,37 @@ function eventListenFunction(event) {
 
   var searchKey = event.target.searchKey.value;
   for (var i = 0; i < allStores[0].data.length; i++){
-    if (searchKey == allStores[0].data[i].name){
+    if (allStores[0].data[i].name === searchKey){
       console.log('true ' + searchKey);
       var strItems = JSON.stringify(searchKey);
       localStorage.setItem('searchKey', strItems);
     }
   }
+
+  // var resultArr=[];
+  // var str= searchKey; //string to search
+
+  // for(var j=0;j< allStores[0].data.length;j++){
+  //   if(allStores[0].data[j].name.indexOf(str) != -1){
+  //     resultArr.push(allStores[0].data[j]);
+  //   }
+  // }
+
+  // var results = document.getElementById('results');
+  // if (localStorage.searchKey){
+  //   var strItems2 = localStorage.getItem('searchKey');
+  //   var searchKey2 = JSON.parse(strItems2);
+  //   var showResults = document.createElement('li');
+  //   showResults.textContent = searchKey2;
+  //   results.appendChild(showResults, searchKey2);
+  // }
+  // // alert('search results:'+resultArr);
+
   console.log('Your search was ' + searchKey);
   console.log(searchKey);
   event.target.searchKey.value = null;
   window.location.replace('stores.html');
-  
+
   return searchKey;
 
 }
@@ -275,8 +295,4 @@ function eventListenFunction(event) {
 formEle.addEventListener('submit', (eventListenFunction));
 
 
-// var results = document.getElementById('results');
 
-// var strItems = localStorage.getItem('searchKey');
-
-// var parse = JSON.parse('searchKey');
