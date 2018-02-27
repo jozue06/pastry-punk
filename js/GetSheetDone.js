@@ -256,13 +256,15 @@ function eventListenFunction(event) {
   event.preventDefault();
 
   var searchKey = event.target.searchKey.value;
+  var resultsArr = [];
   for (var i = 0; i < allStores[0].data.length; i++){
     if (allStores[0].data[i].name.includes(searchKey) || allStores[0].data[i].locationtype.includes(searchKey) || allStores[0].data[i].neighborhood.includes(searchKey)){
       console.log('true ' + searchKey);
-      var strItems = JSON.stringify(allStores[0].data[i]);
-      localStorage.setItem('searchKey', strItems);
-      window.location.replace('stores.html');
+      resultsArr.push(strItems);
     }
+    var strItems = JSON.stringify(resultsArr);
+    localStorage.setItem('searchKey', strItems);
+    window.location.replace('results.html');
   }
 
   // var resultArr=[];
