@@ -1,0 +1,19 @@
+#store{
+    height: 300px;
+}
+
+img{
+    width: 250px;
+    height: 250px;
+}
+
+#store img{
+    float: left;
+}
+
+footer {
+    position: relative;
+    height: 100px;
+    width: 100%;
+    background-color: #ffffff;
+}
