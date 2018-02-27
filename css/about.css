@@ -1,6 +1,10 @@
+* {
+  font-family: Helvetica, sans-serif
+}
 #slogan{
   text-align: center;
   text-transform: uppercase;
+  font-family: 'Chewy', cursive;
 }
 
 #main{
@@ -9,6 +13,7 @@
   margin-right: auto;
   width: 75%;
   padding-bottom: 20px;
+  font-family: 'Chewy', cursive;
 }
 
 #about{
