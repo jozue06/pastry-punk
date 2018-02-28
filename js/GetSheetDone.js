@@ -243,6 +243,8 @@ function attachEvents() {
 
     promise.then((data) => {
       allStores.push(data);
+      var allItems = JSON.stringify(allStores);
+      localStorage.setItem('allStores', allItems);
     });
   };
 }

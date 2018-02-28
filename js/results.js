@@ -30,27 +30,5 @@ if (localStorage.searchKey){
     resultNeighborhood.textContent = parsedArray[i].neighborhood;
     resultName.appendChild(resultNeighborhood);
     results.appendChild(storeDiv);
-
-
-
-  //   showResults.textContent = parsedArray[i].locationtype;
-  //   results.appendChild(showResults);
-
-  //   showResults.textContent = parsedArray[i].globalinfluence;
-  //   results.appendChild(showResults);
-
-  //   showResults.textContent = parsedArray[i].hours;
-  //   results.appendChild(showResults);
-
-  //   showResults.textContent = parsedArray[i].locationtype;
-  //   results.appendChild(showResults);
-
-  //   showResults.textContent = parsedArray[i].phone;
-  //   results.appendChild(showResults);
-
-  //   showResults.textContent = parsedArray[i].address;
-  //   results.appendChild(showResults);
-  // }
   }
-  
 }
