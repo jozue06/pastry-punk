@@ -46,7 +46,12 @@ body {
   display: block;
   margin-left: auto;
   margin-right: auto;
+  width: 90%;
 
+}
+
+.card p{
+  padding-left: 20px;
 }
 
 /* Clear floats after the columns */
@@ -95,4 +100,8 @@ body {
 /* On hover, add a black background color with a little bit see-through */
 .left:hover, .right:hover {
   background-color: rgba(0,0,0,0.8);
+}
+
+#logo{
+  float: left;
 }
