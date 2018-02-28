@@ -6,16 +6,28 @@
  }
  
  #main {
+   
     float: left;
     position: static;
     width: 50%;
     height: 30%;
+    
  }
 
  #container img{
   width: 250px;
   height: 250px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+#container p{
+  font-size: 10px;
+  font-family: 'Chewy', cursive;
+  text-transform: capitalize;
+}
+
+#container h1{
+  text-transform: capitalize;
+  font-family: 'Chewy', cursive;
 }
 
 .imgcontainer {
@@ -63,7 +75,8 @@
     width: 30%; 
     height: 45%; 
     frameborder: 0; 
-    style= border:;
+    style: 
+    border
 }
 
 
