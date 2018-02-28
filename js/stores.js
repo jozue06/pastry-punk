@@ -17,10 +17,9 @@ for (var i = 0; i < allStoresShow[0].data.length; i++){
   var storeImg = document.createElement('p', 'pic');
 
   var resultImg = document.createElement('img');
-
   var a = document.createElement('a');
-
   resultImg.src = allStoresShow[0].data[i].minibottom;
+
   a.setAttribute('href', 'store.html');
   a.appendChild(resultImg);
   storeImg.appendChild(a);
