@@ -3,96 +3,42 @@
 <head>
     <meta charset="UTF-8">
     <title>Pastry Punk - Stores</title>
-    <link rel="stylesheet" type="text/css" href="css/nav.css"/>
-    <link rel="stylesheet" type="text/css" href="css/stores.css"/>
+    <link rel="stylesheet" type="text/css" href="css/nav.css">
+    <link rel="stylesheet" type="text/css" href= "css/stores.css">
+    <script type='text/javascript' src='https://unpkg.com/fetch-jsonp@1.1.1'></script>
+    <script src="js/GetSheetDone.js"></script>
 </head>
 <body>
-        <header>
-                <div class="header">
-                    <!-- <a href="index.html"> -->
-                    <img id=logo src="images/logomakr_pastrypunkb_1024.png" alt="Pastry Punk Logo">
-                    <!-- </a> -->
-                    <div class="header-right">
-                        
-                        <a href="index.html">Home</a>
-    
-                        <a href="feature-index.html">Blog</a>
-                    
-                        <a href="about.html">About Us</a>
-                        
-                        <a href="search.html">Search</a>
-                    </div>
-                </div>  
-            </header>
-    <form id="search">
+    <header>
+        <div class="header">
+            <!-- <a href="index.html"> -->
+            <img id=logo src="images/logomakr_pastrypunkb_1024.png" alt="Pastry Punk Logo">
+            <!-- </a> -->
+            <div class="header-right">
+                
+                <a href="index.html">Home</a>
 
-        <input type="post" id="searchKey" placeholder="Bakery, Pastry or Neighborhood...">
-        <button id="submit"> Search </button>
-    </form>
-</form>  
-    <main>
-        <ul id="row1">
-            <li>
-                <img src="http://placehold.it/250x250/000000">
-            </li>
-            <li>
-                <img src="http://placehold.it/250x250/000000">
-            </li>
-            <li>
-                <img src="http://placehold.it/250x250/000000">
-            </li>
-        </ul>
+                <a href="feature-index.html">Blog</a>
+            
+                <a href="about.html">About Us</a>
+                
+                <a href="search.html">Search</a>
+            </div>
+        </div>
+    </header>
+    <h1> All Stores</h1>
+<form id="search">
 
-        <ul id="stars1">
-            <li>
-                <img src="http://placehold.it/250x50/000000">
-            </li>
-            <li>
-                <img src="http://placehold.it/250x50/000000">
-            </li>
-            <li>
-                <img src="http://placehold.it/250x50/000000">
-            </li>
-        </ul>
+   <input type="post" id="searchKey" placeholder="Bakery, Pastry or Neighborhood...">
+   <button id="submit"> Search </button>
+</form>
 
-        <ul id="row2">
-                <li>
-                    <img src="http://placehold.it/250x250/000000">
-                </li>
-                <li>
-                    <img src="http://placehold.it/250x250/000000">
-                </li>
-                <li>
-                    <img src="http://placehold.it/250x250/000000">
-                </li>
-        </ul>
+    <div id="container">
 
-
-        <ul id="stars2">
-            <li>
-                <img src="http://placehold.it/250x50/000000">
-            </li>
-            <li>
-                <img src="http://placehold.it/250x50/000000">
-            </li>
-            <li>
-                <img src="http://placehold.it/250x50/000000">
-            </li>
-        </ul>
-
-        
-        <!-- <section>
-          <img src="http://placehold.it/960x450/000000">
-        </section> -->
-    </main>
-
-    <footer>    
-        
-        © 2018 Pastry Punk
-    </footer>
-
-    <script type='text/javascript' src='https://unpkg.com/fetch-jsonp@1.1.1'></script>
-    <script src="js/search.js"></script>
-    <script src="js/GetSheetDone.js"></script>
+    </div>
+    <script src="js/stores.js"></script>
+    <footer><p> <a href="stores.html"> All Stores </a></p></footer>
 </body>
 </html>
+
+
