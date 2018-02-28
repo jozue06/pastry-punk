@@ -10,6 +10,7 @@
     margin-left: 5%;
     width: 10%;
     height: auto;
+    float: left;
   }
   
   #aboutUs {
@@ -21,6 +22,8 @@
     float: left;
     color: black;
     text-align: center;
+    font-family: 'Chewy', cursive;
+    text-transform: uppercase;
     margin: 5px;
     padding: 12px;
     text-decoration: none;
