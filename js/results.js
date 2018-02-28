@@ -15,8 +15,6 @@ if (localStorage.searchKey){
   for (var i = 0; i < resultsArr.length; i++){
 
     
-
-    
     var resultImg = document.createElement('img');
     resultImg.src = parsedArray[i].img;
     storeImg.appendChild(resultImg);
@@ -26,7 +24,6 @@ if (localStorage.searchKey){
     resultName.textContent = parsedArray[i].name;
     results.appendChild(resultName);
 
-    
     var resultNeighborhood = document.createElement('p');
     resultNeighborhood.textContent = parsedArray[i].neighborhood;
     resultName.appendChild(resultNeighborhood);
