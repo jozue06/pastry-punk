@@ -34,15 +34,23 @@
             <button class="left" onclick="plusDivs(-1)">&#10094;</button>
             <button class="right" onclick="plusDivs(+1)">&#10095;</button>
 
-                <form action="">
+                <!-- <form action="">
                     <input type="text" name="search" placeholder="Bakery or Pastry..">
-                    <button>Search</button>
+                    <button>Search</button> -->
+
+                    <form id="search">
+                            <input type="post" id="searchKey" placeholder="Bakery, Pastry or Neighborhood...">
+                            <button id="submit"> Search </button>
+                        </form>
                 </form>
                   
         </main>
         <footer>
             <p class="copyright">&copy; 2018 Pastry Punk. All Rights Reserved.</p>
         </footer>
+        <script type='text/javascript' src='https://unpkg.com/fetch-jsonp@1.1.1'></script>
+        <!-- <script src="js/results.js"></script> -->
+        <script src="js/GetSheetDone.js"></script>
         <script src="js/slide.js"></script>
     </body>
     

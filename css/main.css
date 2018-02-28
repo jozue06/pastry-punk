@@ -40,7 +40,7 @@ body {
 }
 
 
-input[type=text], select {
+input[type=post], select {
   display: block;
   margin-left: auto;
   margin-right: auto;

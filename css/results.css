@@ -17,3 +17,12 @@ footer {
     width: 100%;
     background-color: #ffffff;
 }
+
+#container p{
+    font-size: 10px;
+    text-transform: capitalize;
+}
+
+#container h1{
+    text-transform: capitalize;
+}
