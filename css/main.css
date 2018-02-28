@@ -5,20 +5,15 @@ body {
 }
 
 .main {
-  display: block;
-  margin-right: auto;
-  margin-left: auto;
-  width: 70%;
+  display: inline-block;
+  margin-right: 50%
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-/* #imageHover {
-  padding-left: 200px;
-  padding-right: 200px;
-} */
 
 /* Next & previous buttons */
 .right, .left {
+  display: inline-block;
   cursor: pointer;
   width: auto;
   padding: 5px;
@@ -27,7 +22,7 @@ body {
   font-size: 18px;
 }
 
-.right{
+/* .right{
   float: right;
   margin-right: 10%;
   margin-top: -20%;
@@ -36,8 +31,8 @@ body {
 .left{
   float: left;
   margin-left: 10%;
-  margin-top: -20%;
-}
+  margin-top: -20%; 
+}  */
 
 /* On hover, add a black background color with a little bit see-through */
 .left:hover, .right:hover {
