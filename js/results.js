@@ -18,8 +18,12 @@ if (localStorage.searchKey){
 
     var resultImg = document.createElement('img');
 
+    var a = document.createElement('a');
+
     resultImg.src = parsedArray[i].minibottom;
-    storeImg.appendChild(resultImg);
+    a.setAttribute('href', 'store.html');
+    a.appendChild(resultImg);
+    storeImg.appendChild(a);
     storeDiv.appendChild(storeImg);
 
     var resultName = document.createElement('h1');
@@ -32,3 +36,10 @@ if (localStorage.searchKey){
     results.appendChild(storeDiv);
   }
 }
+
+
+
+
+// resultImg.src = allStoresShow[0].data[i].minibottom;
+
+// storeDiv.appendChild(storeImg);

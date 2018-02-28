@@ -14,10 +14,12 @@
 #container p{
     font-size: 10px;
     text-transform: capitalize;
+    font-family: 'Chewy', cursive;
 }
 
 #container h1{
     text-transform: capitalize;
+    font-family: 'Chewy', cursive;
 }
 input[type=post], select {
   display: block;

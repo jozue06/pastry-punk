@@ -18,8 +18,12 @@ for (var i = 0; i < allStoresShow[0].data.length; i++){
 
   var resultImg = document.createElement('img');
 
-  resultImg.src = allStoresShow[0].data[i].img;
-  storeImg.appendChild(resultImg);
+  var a = document.createElement('a');
+
+  resultImg.src = allStoresShow[0].data[i].minibottom;
+  a.setAttribute('href', 'store.html');
+  a.appendChild(resultImg);
+  storeImg.appendChild(a);
   storeDiv.appendChild(storeImg);
 
   var resultName = document.createElement('h1');
