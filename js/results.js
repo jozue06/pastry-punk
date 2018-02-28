@@ -18,7 +18,7 @@ if (localStorage.searchKey){
 
     var resultImg = document.createElement('img');
 
-    resultImg.src = parsedArray[i].img;
+    resultImg.src = parsedArray[i].minibottom;
     storeImg.appendChild(resultImg);
     storeDiv.appendChild(storeImg);
 
@@ -30,6 +30,8 @@ if (localStorage.searchKey){
     resultNeighborhood.textContent = parsedArray[i].neighborhood;
     resultName.appendChild(resultNeighborhood);
     results.appendChild(storeDiv);
+
+  
 
 
 
