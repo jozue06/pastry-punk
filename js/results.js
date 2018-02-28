@@ -1,9 +1,7 @@
 'use strict';
 
 
-var results = document.getElementById('store');
-var storeImg = document.getElementById('pic');
-var storeDiv = document.createElement('div');
+var results = document.getElementById('container');
 var resultsArr = [];
 
 if (localStorage.searchKey){
@@ -14,10 +12,12 @@ if (localStorage.searchKey){
   }
   for (var i = 0; i < resultsArr.length; i++){
 
-    
+    var storeDiv = document.createElement('div');
 
-    
+    var storeImg = document.createElement('p', 'pic');
+
     var resultImg = document.createElement('img');
+
     resultImg.src = parsedArray[i].img;
     storeImg.appendChild(resultImg);
     storeDiv.appendChild(storeImg);
@@ -26,7 +26,6 @@ if (localStorage.searchKey){
     resultName.textContent = parsedArray[i].name;
     results.appendChild(resultName);
 
-    
     var resultNeighborhood = document.createElement('p');
     resultNeighborhood.textContent = parsedArray[i].neighborhood;
     resultName.appendChild(resultNeighborhood);

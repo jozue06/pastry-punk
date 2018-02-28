@@ -255,7 +255,7 @@ function eventListenFunction(event) {
 
   event.preventDefault();
 
-  var searchKey = event.target.searchKey.value;
+  var searchKey = event.target.searchKey.value.toLowerCase();
   var resultsArr = [];
   for (var i = 0; i < allStores[0].data.length; i++){
     if (allStores[0].data[i].name.includes(searchKey) || allStores[0].data[i].locationtype.includes(searchKey) || allStores[0].data[i].neighborhood.includes(searchKey)){
