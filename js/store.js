@@ -1,7 +1,7 @@
 'use strict';
 
 
-var results = document.getElementById('container');
+var results = document.getElementById('storeinfo');
 var resultsArr = [];
 
 if (localStorage.searchKey){
@@ -18,28 +18,27 @@ if (localStorage.searchKey){
 
     var resultImg = document.createElement('img');
 
-    var a = document.createElement('a');
-
     resultImg.src = parsedArray[i].minibottom;
-    a.setAttribute('href', 'store.html');
-    a.appendChild(resultImg);
-    storeImg.appendChild(a);
+    storeImg.appendChild(resultImg);
     storeDiv.appendChild(storeImg);
 
     var resultName = document.createElement('h1');
     resultName.textContent = parsedArray[i].name;
     results.appendChild(resultName);
 
-    var resultNeighborhood = document.createElement('p');
-    resultNeighborhood.textContent = parsedArray[i].neighborhood;
-    resultName.appendChild(resultNeighborhood);
+    var resultLoc = document.createElement('p');
+    resultLoc.textContent = parsedArray[i].locationtype;
+    resultName.appendChild(resultLoc);
     results.appendChild(storeDiv);
+    
+    var resultHours = document.createElement('p');
+    resultHours.textContent = parsedArray[i].hours;
+    resultName.appendChild(resultHours);
+    results.appendChild(storeDiv);
+
+    var resultsMaps = document.getElementById('mapcontact');
+    var resultMap = document.createElement('iframe');
+    resultMap.src = parsedArray[i].maptag;
+    resultsMaps.appendChild(resultMap);
   }
 }
-
-
-
-
-// resultImg.src = allStoresShow[0].data[i].minibottom;
-
-// storeDiv.appendChild(storeImg);
