@@ -1,0 +1,28 @@
+#store{
+    height: 300px;
+}
+
+img{
+    width: 250px;
+    height: 250px;
+}
+
+#store img{
+    float: left;
+}
+
+footer {
+    position: relative;
+    height: 100px;
+    width: 100%;
+    background-color: #ffffff;
+}
+
+#container p{
+    font-size: 10px;
+    text-transform: capitalize;
+}
+
+#container h1{
+    text-transform: capitalize;
+}
