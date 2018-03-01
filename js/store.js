@@ -38,6 +38,7 @@ if (localStorage.searchKey){
 
     var resultsMaps = document.getElementById('mapcontact');
     var resultMap = document.createElement('iframe');
+    resultMap.setAttribute( 'id', 'map');
     resultMap.src = parsedArray[i].maptag;
     resultsMaps.appendChild(resultMap);
   }
