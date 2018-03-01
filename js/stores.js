@@ -33,4 +33,14 @@ for (var i = 0; i < allStoresShow[0].data.length; i++){
   resultNeighborhood.textContent = allStoresShow[0].data[i].neighborhood;
   resultName.appendChild(resultNeighborhood);
   allResults.appendChild(storeDiv);
+
+  var resultAddress = document.createElement('p');
+  resultAddress.textContent = allStoresShow[0].data[i].address;
+  resultName.appendChild(resultAddress);
+  allResults.appendChild(storeDiv);
+
+  var resultHours = document.createElement('p');
+  resultHours.textContent = allStoresShow[0].data[i].hours;
+  resultName.appendChild(resultHours);
+  allResults.appendChild(storeDiv);
 }

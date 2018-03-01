@@ -14,23 +14,24 @@ section{
   margin-right: 50%;
 }
 
-#container img{
-    width: 250px;
-    height: 250px;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+#container{
+  padding-left: 50px;
+  width: 50px;
 }
+
 
 #container p{
-    text-align: center;
-    font-size: 10px;
-    text-transform: capitalize;
-    font-family: 'Chewy', cursive;
+  font-size: 16px;
+  font-family: Helvetica, sans-serif;
+  text-transform: capitalize;
 }
-
+  
 #container h1{
-    text-align: center;
-    text-transform: capitalize;
-    font-family: 'Chewy', cursive;
+  position: absolute;
+  margin-left: 20%;
+  text-transform: capitalize;
+  font-family: Helvetica, sans-serif;
 }
 
 /* Search Field*/
@@ -87,4 +88,11 @@ p.copyright {
   font-size: 0.7em;
   text-align: center;
   bottom:0;
+}
+
+
+h1{
+  text-transform: capitalize;
+  font-family: Helvetica, sans-serif;
+  margin-left: 50px;
 }
