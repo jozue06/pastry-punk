@@ -1,10 +1,19 @@
-#store{
+/* #store{
     height: 300px;
-}
-
+} */
+/* 
 #store img{
     float: left;
+} */
+/* storeDiv{
+  background-color: wheat;
+} */
+section{
+  display: inline;
+  margin-left: 50%;
+  margin-right: 50%;
 }
+
 #container img{
     width: 250px;
     height: 250px;
@@ -12,15 +21,19 @@
 }
 
 #container p{
+    text-align: center;
     font-size: 10px;
     text-transform: capitalize;
     font-family: 'Chewy', cursive;
 }
 
 #container h1{
+    text-align: center;
     text-transform: capitalize;
     font-family: 'Chewy', cursive;
 }
+
+/* Search Field*/
 input[type=post], select {
   display: block;
   margin-left: auto;

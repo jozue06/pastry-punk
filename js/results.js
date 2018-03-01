@@ -13,8 +13,10 @@ if (localStorage.searchKey){
   for (var i = 0; i < resultsArr.length; i++){
 
     var storeDiv = document.createElement('div');
+    storeDiv.setAttribute('id', 'storeDiv');
 
-    var storeImg = document.createElement('p', 'pic');
+    var storeImg = document.createElement('section');
+    storeImg.setAttribute('id','pic');
 
     var resultImg = document.createElement('img');
 
