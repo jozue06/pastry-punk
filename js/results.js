@@ -4,7 +4,8 @@
 var results = document.getElementById('container');
 var resultsArr = [];
 
-if (localStorage.searchKey){
+if (localStorage.searchKey)
+{
   var strItems2 = localStorage.getItem('searchKey');
   var parsedArray = JSON.parse(strItems2);
   for (var j = 0; j < parsedArray.length; j++){
@@ -35,9 +36,12 @@ if (localStorage.searchKey){
     resultNeighborhood.textContent = parsedArray[i].neighborhood;
     resultName.appendChild(resultNeighborhood);
     results.appendChild(storeDiv);
+
+    a.onclick = function() {
+      localStorage.setItem('storeId', resultImg.id);
+    };
   }
 }
-
 function imageHandler(event){
 
   for (var k = 0; k < parsedArray.length; k++){
@@ -49,7 +53,7 @@ function imageHandler(event){
 
 }
 
-results.addEventListener('click', imageHandler);
+results.addEventListener('click', imageHandler)
 
 
 // resultImg.src = allStoresShow[0].data[i].minibottom;
