@@ -5,27 +5,25 @@ body {
 }
 
 .main {
-  display: block;
-  margin-right: auto;
-  margin-left: auto;
-  width: 70%;
+  display: inline-block;
+  vertical-align: middle;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-/* #imageHover {
-  padding-left: 200px;
-  padding-right: 200px;
-} */
 
 /* Next & previous buttons */
 .right, .left {
+  display: inline-block;
+  vertical-align: middle;
+  margin: 10px;
   cursor: pointer;
-  width: auto;
-  padding: 5px;
+  padding: 15px;
   background-color: rgb(247, 247, 247);
   color: gray;
   font-size: 18px;
 }
+
+/* .right{
 
 .imagehover img{
   width: 20%;
@@ -34,14 +32,14 @@ body {
 .right{
   float: right;
   margin-right: 10%;
-  margin-top: -20%;
+  margin-top: -20%; 
 }
 
 .left{
   float: left;
   margin-left: 10%;
-  margin-top: -20%;
-}
+  margin-top: -20%; 
+} */
 
 /* On hover, add a black background color with a little bit see-through */
 .left:hover, .right:hover {
@@ -55,7 +53,7 @@ input[type=post], select {
   margin-right: auto;
   margin-top: 50px;
   width: 35%;
-  padding: 12px 20px;
+  padding: 15px 20px;
   border: 1px solid #ccc;
   border-radius: 4px;
   box-sizing: border-box;
