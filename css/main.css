@@ -24,6 +24,12 @@ body {
 }
 
 /* .right{
+
+.imagehover img{
+  width: 20%;
+}
+
+.right{
   float: right;
   margin-right: 10%;
   margin-top: -20%; 

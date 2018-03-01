@@ -3,21 +3,49 @@
 <head>
     <meta charset="UTF-8">
     <title>Pastry Punk - Stores</title>
-    <link rel="stylesheet" type="text/css" href="css/nav.css"/>
+    <link rel="stylesheet" type="text/css" href="css/stores.css" />
+    <link href="https://fonts.googleapis.com/css?family=Chewy" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/nav.css" />
+    <link href="https://fonts.googleapis.com/css?family=Chewy" rel="stylesheet">
+    <script type='text/javascript' src='https://unpkg.com/fetch-jsonp@1.1.1'></script>
+    
 </head>
 <body>
+    <header>
+        <div class="header">
+            <!-- <a href="index.html"> -->
+            <img id=logo src="images/logomakr_pastrypunkb_1024.png" alt="Pastry Punk Logo">
+            <!-- </a> -->
+            <div class="header-right">
+                
+                <a href="index.html">Home</a>
 
-    <h1>stuffs</h1>
-    <div>
-        <ul id="results">Results</ul>
-        <li>
+                <a href="feature-index.html">Blog</a>
+            
+                <a href="about.html">About Us</a>
+                
+                <a href="search.html">Search</a>
+            </div>
+        </div>
+    </header>
+    <h1> All Stores</h1>
 
-        </li>
+    <a href="index.html"> 
+        <img id=logo src="images/logomakr_pastrypunkb_1024.png" alt="Pastry Punk Logo">
+         </a> 
+<form id="search">
+
+   <input type="post" id="searchKey" placeholder="Bakery, Pastry or Neighborhood...">
+   <button id="submit"> Search </button>
+</form>
+
+    <div id="container">
 
     </div>
-<p> <a href="search.html"> back </a></p>
-    <script type='text/javascript' src='https://unpkg.com/fetch-jsonp@1.1.1'></script>
-    <script src="js/search.js"></script>
-    <!-- <script src="js/GetSheetDone.js"></script> -->
+    <script src="js/GetSheetDone.js"></script>
+    <script src="js/stores.js"></script>
+    <footer><p> <a href="stores.html"> All Stores </a></p></footer>
 </body>
 </html>
+
+

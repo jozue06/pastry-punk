@@ -6,7 +6,7 @@
 body {
   font-family: Helvetica, sans-serif;
   padding: 20px;
-  background: #f1f1f1;
+  background: #f2f2f2;
   width: 95%;
   margin-right: auto;
   margin-left: auto;
@@ -43,6 +43,15 @@ body {
 
 }
 
+.card a{
+  text-decoration: none;
+  color: black;
+}
+
+.card a:hover{
+  color: gray;
+}
+
 
 /* Footer */
 .footer {
@@ -55,3 +64,12 @@ body {
 #logo{
   float: left;
 }
+
+.header a {
+  background: white;
+}
+
+h2{
+  text-transform: uppercase;
+}
+
