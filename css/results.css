@@ -1,21 +1,25 @@
-#store{
+/* #store{
     height: 300px;
-}
-
+} */
+/* 
 #store img{
     float: left;
+} */
+/* storeDiv{
+  background-color: wheat;
+} */
+section{
+  display: inline;
+  margin-left: 50%;
+  margin-right: 50%;
 }
+
 
 #container{
   padding-left: 50px;
   width: 50px;
 }
-#container img{
-  width: 250px;
-  height: 250px;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  margin-bottom: 50px;
-}
+
 
 #container p{
   font-size: 16px;
@@ -29,6 +33,8 @@
   text-transform: capitalize;
   font-family: Helvetica, sans-serif;
 }
+
+/* Search Field*/
 input[type=post], select {
   display: block;
   margin-left: auto;
