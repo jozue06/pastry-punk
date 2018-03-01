@@ -35,6 +35,16 @@ if (localStorage.searchKey){
     resultNeighborhood.textContent = parsedArray[i].neighborhood;
     resultName.appendChild(resultNeighborhood);
     results.appendChild(storeDiv);
+
+    var resultAddress = document.createElement('p');
+    resultAddress.textContent = parsedArray[i].address;
+    resultName.appendChild(resultAddress);
+    results.appendChild(storeDiv);
+  
+    var resultHours = document.createElement('p');
+    resultHours.textContent = parsedArray[i].hours;
+    resultName.appendChild(resultHours);
+    results.appendChild(storeDiv);
   }
 }
 

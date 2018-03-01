@@ -1,3 +1,8 @@
+/* body {
+  background: url("https://cdn.pixabay.com/photo/2017/05/27/03/40/seattle-2347580_1280.jpg") no-repeat center center fixed;
+} */
+
+
 input[type=post], select {
   display: block;
   margin-left: auto;
@@ -21,8 +26,6 @@ input[type=submit] {
   cursor: pointer;
 }
   
-  
-  /* Search Button */
   
 button {
   display: block;
@@ -77,9 +80,9 @@ p.copyright {
 }
 
 #container p{
-  font-size: 16px;
-  font-family: Helvetica, sans-serif;
+  font-size: 18px;
   text-transform: capitalize;
+  font-family: 'Montserrat', sans-serif;
   
 }
   
@@ -87,12 +90,14 @@ p.copyright {
   position: absolute;
   margin-left: 20%;
   text-transform: capitalize;
-  font-family: Helvetica, sans-serif;
+  font-weight: 800;
+  font-family: 'Montserrat', sans-serif;
+ 
   
 }
 
 h1{
   text-transform: capitalize;
-  font-family: Helvetica, sans-serif;
+  font-family: 'Montserrat', sans-serif;
   margin-left: 50px;
 }
