@@ -68,11 +68,11 @@ p.copyright {
 #container{
   padding-left: 50px;
   width: 50px;
+
 }
 #container img{
   width: 250px;
   height: 250px;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   margin-bottom: 50px;
 }
 
@@ -80,6 +80,7 @@ p.copyright {
   font-size: 16px;
   font-family: Helvetica, sans-serif;
   text-transform: capitalize;
+  
 }
   
 #container h1{
@@ -87,6 +88,7 @@ p.copyright {
   margin-left: 20%;
   text-transform: capitalize;
   font-family: Helvetica, sans-serif;
+  
 }
 
 h1{
