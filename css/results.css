@@ -83,3 +83,10 @@ p.copyright {
   text-align: center;
   bottom:0;
 }
+
+
+h1{
+  text-transform: capitalize;
+  font-family: Helvetica, sans-serif;
+  margin-left: 50px;
+}
