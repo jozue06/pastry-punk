@@ -249,8 +249,6 @@ function attachEvents() {
   };
 }
 
-
-
 var formEle = document.getElementById('search');
 
 function eventListenFunction(event) {
@@ -269,24 +267,6 @@ function eventListenFunction(event) {
     window.location.replace('results.html');
   }
 
-  // var resultArr=[];
-  // var str= searchKey; //string to search
-
-  // for(var j=0;j< allStores[0].data.length;j++){
-  //   if(allStores[0].data[j].name.indexOf(str) != -1){
-  //     resultArr.push(allStores[0].data[j]);
-  //   }
-  // }
-
-  // var results = document.getElementById('results');
-  // if (localStorage.searchKey){
-  //   var strItems2 = localStorage.getItem('searchKey');
-  //   var searchKey2 = JSON.parse(strItems2);
-  //   var showResults = document.createElement('li');
-  //   showResults.textContent = searchKey2;
-  //   results.appendChild(showResults, searchKey2);
-  // }
-  // // alert('search results:'+resultArr);
 
   console.log('Your search was ' + searchKey);
   console.log(searchKey);

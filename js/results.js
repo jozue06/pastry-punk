@@ -22,6 +22,7 @@ if (localStorage.searchKey){
 
     resultImg.src = parsedArray[i].minibottom;
     a.setAttribute('href', 'store.html');
+    resultImg.setAttribute('id' , parsedArray[i].name);
     a.appendChild(resultImg);
     storeImg.appendChild(a);
     storeDiv.appendChild(storeImg);
@@ -37,7 +38,18 @@ if (localStorage.searchKey){
   }
 }
 
+function imageHandler(event){
 
+  for (var k = 0; k < parsedArray.length; k++){
+    if (event.target.id === parsedArray[k].name){
+      console.log(parsedArray[k].name + 'was clicked');
+    }
+
+  }
+
+}
+
+results.addEventListener('click', imageHandler);
 
 
 // resultImg.src = allStoresShow[0].data[i].minibottom;
