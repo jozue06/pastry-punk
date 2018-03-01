@@ -91,8 +91,36 @@ p.copyright {
 }
 
 
+#container{
+  padding-left: 50px;
+  width: 50px;
+
+}
+#container img{
+  width: 250px;
+  height: 250px;
+  margin-bottom: 50px;
+}
+
+#container p{
+  font-size: 18px;
+  text-transform: capitalize;
+  font-family: 'Montserrat', sans-serif;
+  
+}
+  
+#container h1{
+  position: absolute;
+  margin-left: 20%;
+  text-transform: capitalize;
+  font-weight: 800;
+  font-family: 'Montserrat', sans-serif;
+ 
+  
+}
+
 h1{
   text-transform: capitalize;
-  font-family: Helvetica, sans-serif;
+  font-family: 'Montserrat', sans-serif;
   margin-left: 50px;
 }
