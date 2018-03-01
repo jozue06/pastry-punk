@@ -5,21 +5,29 @@
 #store img{
     float: left;
 }
+
+#container{
+  padding-left: 50px;
+  width: 50px;
+}
 #container img{
-    width: 250px;
-    height: 250px;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  width: 250px;
+  height: 250px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin-bottom: 50px;
 }
 
 #container p{
-    font-size: 10px;
-    text-transform: capitalize;
-    font-family: 'Chewy', cursive;
+  font-size: 16px;
+  font-family: Helvetica, sans-serif;
+  text-transform: capitalize;
 }
-
+  
 #container h1{
-    text-transform: capitalize;
-    font-family: 'Chewy', cursive;
+  position: absolute;
+  margin-left: 20%;
+  text-transform: capitalize;
+  font-family: Helvetica, sans-serif;
 }
 input[type=post], select {
   display: block;
