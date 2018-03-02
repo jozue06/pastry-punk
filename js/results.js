@@ -4,7 +4,8 @@
 var results = document.getElementById('container');
 var resultsArr = [];
 
-if (localStorage.searchKey){
+if (localStorage.searchKey)
+{
   var strItems2 = localStorage.getItem('searchKey');
   var parsedArray = JSON.parse(strItems2);
   for (var j = 0; j < parsedArray.length; j++){
@@ -38,6 +39,11 @@ if (localStorage.searchKey){
     resultName.appendChild(resultNeighborhood);
     results.appendChild(storeDiv);
 
+<<<<<<< HEAD
+    a.onclick = function() {
+      localStorage.setItem('storeId', resultImg.id);
+    };
+=======
     var resultAddress = document.createElement('p');
     resultAddress.textContent = parsedArray[i].address;
     resultName.appendChild(resultAddress);
@@ -47,9 +53,9 @@ if (localStorage.searchKey){
     resultHours.textContent = parsedArray[i].hours;
     resultName.appendChild(resultHours);
     results.appendChild(storeDiv);
+>>>>>>> master
   }
 }
-
 function imageHandler(event){
 
   for (var k = 0; k < parsedArray.length; k++){
@@ -61,7 +67,7 @@ function imageHandler(event){
 
 }
 
-results.addEventListener('click', imageHandler);
+results.addEventListener('click', imageHandler)
 
 
 // resultImg.src = allStoresShow[0].data[i].minibottom;
