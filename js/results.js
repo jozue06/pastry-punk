@@ -39,21 +39,9 @@ if (localStorage.searchKey)
     resultName.appendChild(resultNeighborhood);
     results.appendChild(storeDiv);
 
-<<<<<<< HEAD
     a.onclick = function() {
       localStorage.setItem('storeId', resultImg.id);
     };
-=======
-    var resultAddress = document.createElement('p');
-    resultAddress.textContent = parsedArray[i].address;
-    resultName.appendChild(resultAddress);
-    results.appendChild(storeDiv);
-  
-    var resultHours = document.createElement('p');
-    resultHours.textContent = parsedArray[i].hours;
-    resultName.appendChild(resultHours);
-    results.appendChild(storeDiv);
->>>>>>> master
   }
 }
 function imageHandler(event){
