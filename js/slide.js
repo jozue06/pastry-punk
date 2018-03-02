@@ -31,7 +31,7 @@ function showDivs(n) {
 }
 
 // Set carousel to start working automatically.
-let carouselTicket = setInterval(carousel, 3000);
+let carouselTicket = setInterval(carousel, 5000);
 
 var allFeaturePics = document.getElementsByClassName('main');
 for (var i = 0; i < allFeaturePics.length; i++) {
