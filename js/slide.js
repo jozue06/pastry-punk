@@ -27,11 +27,11 @@ function showDivs(n) {
   for (i = 0; i < x.length; i++) {
     x[i].style.display = 'none';
   }
-  x[slideIndex-1].style.display = 'block';
+  x[slideIndex-1].style.display = 'inline-block';
 }
 
 // Set carousel to start working automatically.
-let carouselTicket = setInterval(carousel, 3000);
+let carouselTicket = setInterval(carousel, 5000);
 
 var allFeaturePics = document.getElementsByClassName('main');
 for (var i = 0; i < allFeaturePics.length; i++) {

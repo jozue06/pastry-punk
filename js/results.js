@@ -4,7 +4,8 @@
 var results = document.getElementById('container');
 var resultsArr = [];
 
-if (localStorage.searchKey){
+if (localStorage.searchKey)
+{
   var strItems2 = localStorage.getItem('searchKey');
   var parsedArray = JSON.parse(strItems2);
   for (var j = 0; j < parsedArray.length; j++){
@@ -13,8 +14,10 @@ if (localStorage.searchKey){
   for (var i = 0; i < resultsArr.length; i++){
 
     var storeDiv = document.createElement('div');
+    storeDiv.setAttribute('id', 'storeDiv');
 
-    var storeImg = document.createElement('p', 'pic');
+    var storeImg = document.createElement('section');
+    storeImg.setAttribute('id','pic');
 
     var resultImg = document.createElement('img');
 
@@ -22,6 +25,7 @@ if (localStorage.searchKey){
 
     resultImg.src = parsedArray[i].minibottom;
     a.setAttribute('href', 'store.html');
+    console.log(parsedArray[i].name);
     resultImg.setAttribute('id' , parsedArray[i].name);
     a.appendChild(resultImg);
     storeImg.appendChild(a);
@@ -42,7 +46,7 @@ function imageHandler(event){
 
   for (var k = 0; k < parsedArray.length; k++){
     if (event.target.id === parsedArray[k].name){
-      console.log(parsedArray[k].name + 'was clicked');
+      localStorage.setItem('storeId', event.target.id);
     }
 
   }

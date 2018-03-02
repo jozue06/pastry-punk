@@ -1,4 +1,4 @@
- #header {
+#header {
     margin: 0 auto;
     width: 90%; 
     float: center;
@@ -12,6 +12,12 @@
     width: 50%;
     height: 30%;
     
+ }
+
+ iframe #map{
+     width: 50%;
+     align-content: center
+     
  }
 
  #container img{
