@@ -40,7 +40,8 @@ body {
   display: block;
   float: left;
   padding-right: 10px;
-
+  width: 20%;
+  height: 90%;
 }
 
 .card a{
@@ -73,3 +74,6 @@ h2{
   text-transform: uppercase;
 }
 
+.footer {
+  background: #FFCCFF;
+}

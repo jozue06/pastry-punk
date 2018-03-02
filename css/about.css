@@ -4,7 +4,7 @@
 #slogan{
   text-align: center;
   text-transform: uppercase;
-  font-family: Montserrat;
+  font-family: Montserrat, sans-serif;
 }
 .main {
   float: left;
