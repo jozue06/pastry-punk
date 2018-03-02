@@ -25,6 +25,7 @@ if (localStorage.searchKey)
 
     resultImg.src = parsedArray[i].minibottom;
     a.setAttribute('href', 'store.html');
+    console.log(parsedArray[i].name);
     resultImg.setAttribute('id' , parsedArray[i].name);
     a.appendChild(resultImg);
     storeImg.appendChild(a);
@@ -38,24 +39,21 @@ if (localStorage.searchKey)
     resultNeighborhood.textContent = parsedArray[i].neighborhood;
     resultName.appendChild(resultNeighborhood);
     results.appendChild(storeDiv);
-
-    a.onclick = function() {
-      localStorage.setItem('storeId', resultImg.id);
-    };
   }
 }
+
 function imageHandler(event){
 
   for (var k = 0; k < parsedArray.length; k++){
     if (event.target.id === parsedArray[k].name){
-      console.log(parsedArray[k].name + 'was clicked');
+      localStorage.setItem('storeId', event.target.id);
     }
 
   }
 
 }
 
-results.addEventListener('click', imageHandler)
+results.addEventListener('click', imageHandler);
 
 
 // resultImg.src = allStoresShow[0].data[i].minibottom;
