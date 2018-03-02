@@ -1,50 +1,81 @@
-#header {
-    margin: 0 auto;
-    width: 90%; 
-    float: center;
-    padding-top: 5%;
- }
- 
- #main {
-   
-    float: left;
-    position: static;
-    width: 50%;
-    height: 30%;
-    
- }
+div{
+  /* border: solid;
+  border-color: red; */
+  margin-top: 20px;
+}
 
- iframe #map{
-     width: 50%;
-     align-content: center
+iframe{
+  width: 50%;
+  align-content: center;
+  margin-left: 10%;
+  height: 300px;
+  border: dashed;
      
- }
+}
 
- #container img{
+/* #container img{
   width: 250px;
   height: 250px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-}
-#container p{
-  font-size: 10px;
-  font-family: 'Chewy', cursive;
+} */
+
+
+/* #storeinfo p{
+  font-size: 14px;
+  font-family: 'Montserrat', sans-serif;
   text-transform: capitalize;
+} */
+
+
+h1{
+  text-transform: uppercase;
+  font-family: 'Montserrat', sans-serif;
+  height: 50px;
+  margin-left: 10%;
+  /* float: right; */
+}
+h2{
+  float: left;
+  padding-left: 10%;
+  width: 100%;
 }
 
-#container h1{
-  text-transform: capitalize;
-  font-family: 'Chewy', cursive;
+#storeinfo img{
+  float: left;
+  width: 300px;
+  height: 300px;
+  padding-bottom: 30px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
+  
+
+  /* display: inline-block; */
+  /* z-index:1000; */
+  /* position:relative;
+  margin-left: 52%;
+  padding-bottom: 5%;
+  width: 20%;
+  height: 10%; */
 
 
-.imgcontainer {
+ p{
+  /* display: inline-block; */
+  vertical-align: middle;
+   /* float: right; */
+   /* margin-top: 10px; */
+  width: 30%;
+  margin-left: 10%;
+  font-family: 'Montserrat', sans-serif;
+ }
+
+/* .imgcontainer {
     position:relative;
     margin-left: 52%;
     padding-bottom: 5%;
     width: 20%;
     height: 10%;
-}
-
+} */
+/* 
  #top {
     margin-left: .3%;
     padding-right: -22%;
@@ -57,9 +88,9 @@
     margin-left: .3%;
     padding-top: 31%;
     width: 80%;
-    height: 60%;
-}
+    height: 60%; */
 
+/* 
 .storeinfo {
     float: right;
     margin-top: -42%; 
@@ -67,9 +98,9 @@
     padding-bottom: 20%;
     font-size: .8vw;
     border: dashed;
-}
+} */
 
-
+/* 
 .mapcontact {
      margin: 0 auto;
      width: 90%;
@@ -84,12 +115,12 @@
     frameborder: 0; 
     style: 
     border
-}
+} */
 
 
-.left:hover, .right:hover {
+/* .left:hover, .right:hover {
     background-color: rgba(189, 185, 185, 0.8);
-  }
+  } */
   
   
   input[type=post], select {

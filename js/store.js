@@ -18,7 +18,7 @@ if (localStorage.allStores){
 
       var storeDiv = document.createElement('div');
 
-      var storeImg = document.createElement('p', 'pic');
+      var storeImg = document.createElement('h2', 'pic');
 
       var resultImg = document.createElement('img');
 
@@ -29,15 +29,31 @@ if (localStorage.allStores){
       var resultName = document.createElement('h1');
       resultName.textContent = parsedArray[i].name;
       results.appendChild(resultName);
+      // resultName.setAttribute('id', 'name');
 
       var resultLoc = document.createElement('p');
       resultLoc.textContent = parsedArray[i].locationtype;
-      resultName.appendChild(resultLoc);
+      storeDiv.appendChild(resultLoc);
       results.appendChild(storeDiv);
 
       var resultHours = document.createElement('p');
       resultHours.textContent = parsedArray[i].hours;
-      resultName.appendChild(resultHours);
+      storeDiv.appendChild(resultHours);
+      results.appendChild(storeDiv);
+
+      var resultBlurb = document.createElement('p');
+      resultBlurb.textContent = parsedArray[i].blurb;
+      storeDiv.appendChild(resultBlurb);
+      results.appendChild(storeDiv);
+
+      var resultPastry = document.createElement('p');
+      resultPastry.textContent = parsedArray[i].pastry;
+      storeDiv.appendChild(resultPastry);
+      results.appendChild(storeDiv);
+
+      var resultItem = document.createElement('p');
+      resultItem.textContent = parsedArray[i].item;
+      storeDiv.appendChild(resultItem);
       results.appendChild(storeDiv);
 
       var resultsMaps = document.getElementById('mapcontact');
