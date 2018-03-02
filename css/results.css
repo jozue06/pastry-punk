@@ -1,26 +1,40 @@
-#store{
+/* #store{
     height: 300px;
-}
-
+} */
+/* 
 #store img{
     float: left;
+} */
+/* storeDiv{
+  background-color: wheat;
+} */
+section{
+  display: inline;
+  margin-left: 50%;
+  margin-right: 50%;
 }
-#container img{
-    width: 250px;
-    height: 250px;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+
+#container{
+  padding-left: 50px;
+  width: 50px;
 }
+
 
 #container p{
-    font-size: 10px;
-    text-transform: capitalize;
-    font-family: 'Chewy', cursive;
+  font-size: 16px;
+  font-family: Helvetica, sans-serif;
+  text-transform: capitalize;
+}
+  
+#container h1{
+  position: absolute;
+  margin-left: 20%;
+  text-transform: capitalize;
+  font-family: Helvetica, sans-serif;
 }
 
-#container h1{
-    text-transform: capitalize;
-    font-family: 'Chewy', cursive;
-}
+/* Search Field*/
 input[type=post], select {
   display: block;
   margin-left: auto;
@@ -74,4 +88,39 @@ p.copyright {
   font-size: 0.7em;
   text-align: center;
   bottom:0;
+}
+
+
+#container{
+  padding-left: 50px;
+  width: 50px;
+
+}
+#container img{
+  width: 250px;
+  height: 250px;
+  margin-bottom: 50px;
+}
+
+#container p{
+  font-size: 18px;
+  text-transform: capitalize;
+  font-family: 'Montserrat', sans-serif;
+  
+}
+  
+#container h1{
+  position: absolute;
+  margin-left: 20%;
+  text-transform: capitalize;
+  font-weight: 800;
+  font-family: 'Montserrat', sans-serif;
+ 
+  
+}
+
+h1{
+  text-transform: capitalize;
+  font-family: 'Montserrat', sans-serif;
+  margin-left: 50px;
 }
