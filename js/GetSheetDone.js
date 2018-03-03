@@ -1,15 +1,15 @@
 
 (function webpackUniversalModuleDefinition(root, factory) {
-  if(typeof exports === 'object' && typeof module === 'object')
+  if (typeof exports === 'object' && typeof module === 'object')
     module.exports = factory(require('fetch-jsonp'));
-  else if(typeof define === 'function' && define.amd)
+  else if (typeof define === 'function' && define.amd)
     define('GetSheetDone', ['fetch-jsonp'], factory);
-  else if(typeof exports === 'object')
+  else if (typeof exports === 'object')
     exports['GetSheetDone'] = factory(require('fetch-jsonp'));
   else
     root['GetSheetDone'] = factory(root['fetchJsonp']);
-})(this, function(__WEBPACK_EXTERNAL_MODULE_1__) {
-  return /******/ (function(modules) { // webpackBootstrap
+})(this, function (__WEBPACK_EXTERNAL_MODULE_1__) {
+  return /******/ (function (modules) { // webpackBootstrap
     /******/ 	// The module cache
     /******/ 	var installedModules = {};
     /******/
@@ -17,15 +17,17 @@
     /******/ 	function __webpack_require__(moduleId) {
       /******/
       /******/ 		// Check if module is in cache
-      /******/ 		if(installedModules[moduleId]) {
+      /******/ 		if (installedModules[moduleId]) {
         /******/ 			return installedModules[moduleId].exports;
-        /******/ 		}
+        /******/
+      }
       /******/ 		// Create a new module (and put it into the cache)
       /******/ 		var module = installedModules[moduleId] = {
         /******/ 			i: moduleId,
         /******/ 			l: false,
         /******/ 			exports: {}
-        /******/ 		};
+        /******/
+      };
       /******/
       /******/ 		// Execute the module function
       /******/ 		modules[moduleId].call(module.exports, module, module.exports, __webpack_require__);
@@ -35,7 +37,8 @@
       /******/
       /******/ 		// Return the exports of the module
       /******/ 		return module.exports;
-      /******/ 	}
+      /******/
+    }
     /******/
     /******/
     /******/ 	// expose the modules object (__webpack_modules__)
@@ -45,38 +48,43 @@
     /******/ 	__webpack_require__.c = installedModules;
     /******/
     /******/ 	// define getter function for harmony exports
-    /******/ 	__webpack_require__.d = function(exports, name, getter) {
-      /******/ 		if(!__webpack_require__.o(exports, name)) {
+    /******/ 	__webpack_require__.d = function (exports, name, getter) {
+      /******/ 		if (!__webpack_require__.o(exports, name)) {
         /******/ 			Object.defineProperty(exports, name, {
           /******/ 				configurable: false,
           /******/ 				enumerable: true,
           /******/ 				get: getter
-          /******/ 			});
-        /******/ 		}
-      /******/ 	};
+          /******/
+        });
+        /******/
+      }
+      /******/
+    };
     /******/
     /******/ 	// getDefaultExport function for compatibility with non-harmony modules
-    /******/ 	__webpack_require__.n = function(module) {
+    /******/ 	__webpack_require__.n = function (module) {
       /******/ 		var getter = module && module.__esModule ?
         /******/ 			function getDefault() { return module['default']; } :
         /******/ 			function getModuleExports() { return module; };
       /******/ 		__webpack_require__.d(getter, 'a', getter);
       /******/ 		return getter;
-      /******/ 	};
+      /******/
+    };
     /******/
     /******/ 	// Object.prototype.hasOwnProperty.call
-    /******/ 	__webpack_require__.o = function(object, property) { return Object.prototype.hasOwnProperty.call(object, property); };
+    /******/ 	__webpack_require__.o = function (object, property) { return Object.prototype.hasOwnProperty.call(object, property); };
     /******/
     /******/ 	// __webpack_public_path__
     /******/ 	__webpack_require__.p = '';
     /******/
     /******/ 	// Load entry module and return exports
     /******/ 	return __webpack_require__(__webpack_require__.s = 0);
-    /******/ })
+    /******/
+  })
   /************************************************************************/
-  /******/ ([
+  /******/([
     /* 0 */
-    /***/ (function(module, exports, __webpack_require__) {
+    /***/ (function (module, exports, __webpack_require__) {
 
       'use strict';
 
@@ -140,8 +148,8 @@
       }
 
       /**
- * Use for table with labels only for columns
- */
+   * Use for table with labels only for columns
+   */
       function parseEntry(entry) {
         var res = {};
         Object.keys(entry).forEach(function (key) {
@@ -154,9 +162,9 @@
       }
 
       /**
- * Parser for table where just the columns are labeled
- * @return array of objects where the labels are keys
- */
+   * Parser for table where just the columns are labeled
+   * @return array of objects where the labels are keys
+   */
       function parseLabeledCols(entries) {
         return entries.map(function (entry) {
           return parseEntry(entry);
@@ -164,9 +172,9 @@
       }
 
       /**
- * Use for table with labels for rows AND columns
- * Example input: "bar: 123, baz: 122, bab: 234"
- */
+   * Use for table with labels for rows AND columns
+   * Example input: "bar: 123, baz: 122, bab: 234"
+   */
       function parseLabeledRow(row) {
         var cols = row.split(', ');
         var res = cols.reduce(function (acc, col) {
@@ -178,9 +186,9 @@
       }
 
       /**
- * Parser for table where both rows and columns are labeled
- * @return object where keys are row labels and values are objects where keys are the column labels
- */
+   * Parser for table where both rows and columns are labeled
+   * @return object where keys are row labels and values are objects where keys are the column labels
+   */
       function parseLabeledRowsCols(entries) {
         var res = {};
         entries.forEach(function (entry) {
@@ -216,14 +224,16 @@
         labeledColsRows: labeledColsRows
       };
 
-      /***/ }),
+      /***/
+    }),
     /* 1 */
-    /***/ (function(module, exports) {
+    /***/ (function (module, exports) {
 
       module.exports = __WEBPACK_EXTERNAL_MODULE_1__;
 
-      /***/ })
-    /******/ ])['default'];
+      /***/
+    })
+    /******/])['default'];
 });
 
 var allStores = [];
@@ -236,7 +246,7 @@ function readValues() {
   sheetNum = '1';
 }
 function attachEvents() {
-  onload = function(ev) {
+  onload = function (ev) {
     ev.preventDefault();
     readValues();
     var promise = GetSheetDone.labeledCols(key, sheetNum);
@@ -257,8 +267,8 @@ function eventListenFunction(event) {
 
   var searchKey = event.target.searchKey.value.toLowerCase();
   var resultsArr = [];
-  for (var i = 0; i < allStores[0].data.length; i++){
-    if (allStores[0].data[i].name.includes(searchKey) || allStores[0].data[i].locationtype.includes(searchKey) || allStores[0].data[i].neighborhood.includes(searchKey) || allStores[0].data[i].menu.includes(searchKey)){
+  for (var i = 0; i < allStores[0].data.length; i++) {
+    if (allStores[0].data[i].name.includes(searchKey) || allStores[0].data[i].locationtype.includes(searchKey) || allStores[0].data[i].neighborhood.includes(searchKey) || allStores[0].data[i].menu.includes(searchKey)) {
       console.log('true ' + searchKey);
       resultsArr.push(allStores[0].data[i]);
     }

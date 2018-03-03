@@ -1,96 +1,96 @@
 div{
-  margin-top: 20px;
+margin-top: 20px;
 }
 
 iframe{
-  width: 50%;
-  align-content: center;
-  margin-left: 10%;
-  height: 300px;
-  border: dashed;
-     
+width: 50%;
+align-content: center;
+margin-left: 10%;
+height: 300px;
+border: dashed;
+
 }
 
 
 
 h1{
-  text-transform: uppercase;
-  font-family: 'Montserrat', sans-serif;
-  height: 50px;
-  margin-left: 10%;
+text-transform: uppercase;
+font-family: 'Montserrat', sans-serif;
+height: 50px;
+margin-left: 10%;
 }
 h2{
-  float: left;
-  padding-left: 10%;
-  width: 100%;
+float: left;
+padding-left: 10%;
+width: 100%;
 }
 
 #storeinfo img{
-  float: left;
-  width: 300px;
-  height: 300px;
-  padding-bottom: 30px;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+float: left;
+width: 300px;
+height: 300px;
+padding-bottom: 30px;
+box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 
- p{
-  vertical-align: middle;
-  width: 30%;
-  margin-left: 10%;
-  font-family: 'Montserrat', sans-serif;
- }
+p{
+vertical-align: middle;
+width: 30%;
+margin-left: 10%;
+font-family: 'Montserrat', sans-serif;
+}
 
 
-  input[type=post], select {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 50px;
-    width: 35%;
-    padding: 12px 20px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    box-sizing: border-box;
-  }
-  
-  /* Search Button */
-  
-  button {
-    display: block;
-    margin: auto;
-  } 
-  
-  button {
-    border: none;
-    padding: 10px 30px;
-    background: rgb(2, 0, 1);
-    color:rgb(252, 183, 229);
-    border-radius: 4px;
-    font-size: 18px;
-    margin-top: 10px;
-    transition: 350ms;
-    cursor: pointer;
-  }
-  
-  button:hover {
-    background: rgb(252, 183, 229);
-    color: black;
-  }
+input[type=post], select {
+display: block;
+margin-left: auto;
+margin-right: auto;
+margin-top: 50px;
+width: 35%;
+padding: 12px 20px;
+border: 1px solid #ccc;
+border-radius: 4px;
+box-sizing: border-box;
+}
 
-  footer {
-    position: relative;
-    height: 100px;
-    width: 100%;
-    background-color: #ffffff;
-  }
-  
-  p.copyright {
-    position: absolute;
-    width: 100%;
-    color:black;
-    line-height: 40px;
-    font-size: 0.7em;
-    text-align: center;
-    bottom:0;
-  }
+/* Search Button */
+
+button {
+display: block;
+margin: auto;
+} 
+
+button {
+border: none;
+padding: 10px 30px;
+background: rgb(2, 0, 1);
+color:rgb(252, 183, 229);
+border-radius: 4px;
+font-size: 18px;
+margin-top: 10px;
+transition: 350ms;
+cursor: pointer;
+}
+
+button:hover {
+background: rgb(252, 183, 229);
+color: black;
+}
+
+footer {
+position: relative;
+height: 100px;
+width: 100%;
+background-color: #ffffff;
+}
+
+p.copyright {
+position: absolute;
+width: 100%;
+color:black;
+line-height: 40px;
+font-size: 0.7em;
+text-align: center;
+bottom:0;
+}

@@ -5,12 +5,12 @@ var results = document.getElementById('storeinfo');
 var storeFeature = localStorage.getItem('storeId');
 
 
-if (localStorage.allStores){
+if (localStorage.allStores) {
   var strItems2 = localStorage.getItem('allStores');
   var parsedArray = JSON.parse(strItems2);
   parsedArray = parsedArray[0].data;
   for (var i = 0; i < parsedArray.length; i++) {
-    if(storeFeature === parsedArray[i].name) {
+    if (storeFeature === parsedArray[i].name) {
 
       var storeDiv = document.createElement('div');
 
