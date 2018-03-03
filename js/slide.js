@@ -1,5 +1,5 @@
 
-//Set up feature image carousel. 
+//Set up feature image carousel.
 var slideIndex = 0;
 carousel();
 
