@@ -23,24 +23,6 @@ body {
   font-size: 18px;
 }
 
-/* .right{
-
-.imagehover img{
-  width: 20%;
-}
-
-.right{
-  float: right;
-  margin-right: 10%;
-  margin-top: -20%; 
-}
-
-.left{
-  float: left;
-  margin-left: 10%;
-  margin-top: -20%; 
-} */
-
 /* On hover, add a black background color with a little bit see-through */
 .left:hover, .right:hover {
   background-color: rgba(189, 185, 185, 0.8);

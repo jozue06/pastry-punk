@@ -51,6 +51,13 @@ if (localStorage.searchKey)
     results.appendChild(storeDiv);
   }
 }
+if (resultsArr == ''){
+  var noResult = document.createElement('div');
+  noResult.setAttribute('id', 'noResult');
+  noResult.textContent = ('No Results, Please try another search');
+  results.appendChild(noResult);
+}
+
 
 function imageHandler(event){
 
@@ -64,8 +71,3 @@ function imageHandler(event){
 }
 
 results.addEventListener('click', imageHandler);
-
-
-// resultImg.src = allStoresShow[0].data[i].minibottom;
-
-// storeDiv.appendChild(storeImg);

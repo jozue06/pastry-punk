@@ -2,7 +2,6 @@
 
 
 var results = document.getElementById('storeinfo');
-// var resultsArr = [];
 var storeFeature = localStorage.getItem('storeId');
 
 
@@ -10,9 +9,6 @@ if (localStorage.allStores){
   var strItems2 = localStorage.getItem('allStores');
   var parsedArray = JSON.parse(strItems2);
   parsedArray = parsedArray[0].data;
-  //for (var j = 0; j < parsedArray.length; j++){
-  // resultsArr.push(parsedArray[j]);
-  //}
   for (var i = 0; i < parsedArray.length; i++) {
     if(storeFeature === parsedArray[i].name) {
 
@@ -29,7 +25,6 @@ if (localStorage.allStores){
       var resultName = document.createElement('h1');
       resultName.textContent = parsedArray[i].name;
       results.appendChild(resultName);
-      // resultName.setAttribute('id', 'name');
 
       var resultLoc = document.createElement('p');
       resultLoc.textContent = parsedArray[i].locationtype;
