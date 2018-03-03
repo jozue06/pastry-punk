@@ -51,6 +51,17 @@ if (localStorage.allStores) {
       storeDiv.appendChild(resultItem);
       results.appendChild(storeDiv);
 
+
+      var a = document.createElement('a');
+
+      var website = document.createElement('p');
+
+      website.textContent = parsedArray[i].website;
+      a.setAttribute('href', parsedArray[i].website);
+      website.setAttribute('id' , parsedArray[i].website);
+      a.appendChild(website);
+      storeDiv.appendChild(a);
+
       var resultsMaps = document.getElementById('mapcontact');
       var resultMap = document.createElement('iframe');
       resultMap.src = parsedArray[i].maptag;
