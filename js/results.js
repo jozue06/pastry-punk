@@ -54,7 +54,7 @@ if (localStorage.searchKey)
 if (resultsArr == ''){
   var noResult = document.createElement('div');
   noResult.setAttribute('id', 'noResult');
-  noResult.textContent = ('No Results, Please try another search');
+  noResult.textContent = ('No Results, Please try another search.');
   results.appendChild(noResult);
 }
 
