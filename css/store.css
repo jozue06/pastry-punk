@@ -1,14 +1,13 @@
-div{
-margin-top: 20px;
+.header{
+  zoom: 2;
 }
 
 iframe{
-width: 50%;
 align-content: center;
 margin-left: 10%;
-height: 300px;
-border: dashed;
-
+width: 55%;
+height: 600px;
+box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 
@@ -18,7 +17,9 @@ text-transform: uppercase;
 font-family: 'Montserrat', sans-serif;
 height: 50px;
 margin-left: 10%;
+font-size: 80px;
 }
+
 h2{
 float: left;
 padding-left: 10%;
@@ -27,9 +28,8 @@ width: 100%;
 
 #storeinfo img{
 float: left;
-width: 300px;
-height: 300px;
-padding-bottom: 30px;
+width: 600px;
+height: 640px;
 box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
@@ -39,6 +39,7 @@ vertical-align: middle;
 width: 30%;
 margin-left: 10%;
 font-family: 'Montserrat', sans-serif;
+font-size: 30px;
 }
 
 
