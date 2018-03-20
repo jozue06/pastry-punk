@@ -11,24 +11,6 @@ box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 
-/* Next & previous buttons */
-.right, .left {
-display: inline-block;
-vertical-align: middle;
-margin: 10px;
-cursor: pointer;
-padding: 15px;
-background-color: rgb(247, 247, 247);
-color: gray;
-font-size: 18px;
-}
-
-/* On hover, add a black background color with a little bit see-through */
-.left:hover, .right:hover {
-background-color: rgba(189, 185, 185, 0.8);
-}
-
-
 input[type=post], select {
 display: block;
 margin-left: auto;
@@ -82,4 +64,29 @@ line-height: 40px;
 font-size: 0.7em;
 text-align: center;
 bottom:0;
+}
+
+@media only screen and (min-width: 640px){
+  /* Next & previous buttons */
+.right, .left {
+    display: inline-block;
+    vertical-align: middle;
+    margin: 10px;
+    cursor: pointer;
+    padding: 15px;
+    background-color: rgb(247, 247, 247);
+    color: gray;
+    font-size: 18px;
+    }
+    
+    .left:hover, .right:hover {
+        background-color: rgba(189, 185, 185, 0.8);
+        }
+    }
+    /* On hover, add a black background color with a little bit see-through */
+  
+@media only screen and (max-width: 1080px){
+.right, .left {
+    display: none;
+    }
 }
