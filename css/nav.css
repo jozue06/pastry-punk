@@ -9,21 +9,21 @@ padding: 20px 10px;
 }
 
 
+#aboutUs {
+background-color: black;
+color: #ffccff;
+}
 
-#logo {
+.logo{
+float: left;
 margin-left: 5%;
 width: 10%;
 height: auto;
 float: left;
 }
 
-#aboutUs {
-background-color: black;
-color: #ffccff;
-}
-
 /* Style the header links */
-.header a {
+.header-right a {
 float: left;
 color: black;
 text-align: center;

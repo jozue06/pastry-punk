@@ -14,9 +14,9 @@ box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 h1{
 text-transform: uppercase;
 font-family: 'Montserrat', sans-serif;
-height: 50px;
+height: 2%;
 margin-left: 10%;
-font-size: 80px;
+font-size: 3em;
 }
 
 h2{
@@ -27,18 +27,20 @@ width: 100%;
 
 #storeinfo img{
 float: left;
-width: 600px;
-height: 640px;
+width: 250px;   
+height: 250px;
+margin-bottom: 50px;
 box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 
 p{
 vertical-align: middle;
-width: 30%;
+/* width: 30%; */
 margin-left: 10%;
+margin-right: 40%;
 font-family: 'Montserrat', sans-serif;
-font-size: 30px;
+font-size: 1.5vw;
 }
 
 

@@ -70,13 +70,13 @@ width: 50px;
 
 }
 #container img{
-width: 250px;
+width: 250px;   
 height: 250px;
 margin-bottom: 50px;
 box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-img:hover {
+#container img:hover {
 /* Start the shake animation and make the animation last for 0.7 seconds */
 animation: shake 0.7s; 
 /* When the animation is finished, start again */
@@ -104,18 +104,45 @@ font-family: 'Montserrat', sans-serif;
 
 }
 
+
 #container h1{
 position: absolute;
+margin-left: 30%;
+margin-right: 30%;
+text-transform: capitalize;
+font-weight: 8em;
+font-family: 'Montserrat', sans-serif;
+}
+
+h1 {
+text-transform: capitalize;
+font-family: 'Montserrat', sans-serif;
 margin-left: 20%;
-text-transform: capitalize;
-font-weight: 800;
-font-family: 'Montserrat', sans-serif;
-
-
 }
 
-h1{
-text-transform: capitalize;
-font-family: 'Montserrat', sans-serif;
-margin-left: 50px;
-}
+
+
+@media only screen and (min-width: 640px){
+    /* Next & previous buttons */
+  h1{
+      display: inline-block;
+      /* vertical-align: middle;
+      margin: 10px;
+      cursor: pointer;
+      padding: 15px;
+      background-color: rgb(247, 247, 247);
+      color: gray;
+      font-size: 18px; */
+      }
+      
+      .left:hover, .right:hover {
+          background-color: rgba(189, 185, 185, 0.8);
+          }
+      }
+      /* On hover, add a black background color with a little bit see-through */
+    
+  @media only screen and (max-width: 1080px){
+  h1 {
+      display: none;
+      }
+  }

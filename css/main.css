@@ -89,4 +89,7 @@ bottom:0;
 .right, .left {
     display: none;
     }
+    .main{
+        width: 80%;
+    }
 }
