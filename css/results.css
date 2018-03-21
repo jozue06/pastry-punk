@@ -62,8 +62,8 @@ font-family: 'Montserrat', sans-serif;
 
 
 #container{
-padding-left: 50px;
-width: 50px;
+padding-left: 10%;
+width: 50%;
 
 }
 #container img{
@@ -105,16 +105,17 @@ font-family: 'Montserrat', sans-serif;
 
 #container h1{
 position: absolute;
-margin-left: 20%;
+margin-left: 30%;
+margin-right: 10%;
 text-transform: capitalize;
-font-weight: 800;
+font-weight: 8em;
 font-family: 'Montserrat', sans-serif;
 }
 
 h1{
 text-transform: capitalize;
 font-family: 'Montserrat', sans-serif;
-margin-left: 50px;
+margin-left: 20%;
 }
 
 
