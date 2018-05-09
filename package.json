@@ -1,0 +1,27 @@
+{
+  "name": "pastry-punk",
+  "version": "1.0.0",
+  "description": "pastry search for seattle area",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jozue06/pastry-punk.git"
+  },
+  "keywords": [
+    "pastry",
+    "pastries"
+  ],
+  "author": "Josh McClung",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jozue06/pastry-punk/issues"
+  },
+  "homepage": "https://github.com/jozue06/pastry-punk#readme",
+  "dependencies": {
+    "express": "^4.16.3"
+  }
+}
