@@ -1,8 +1,4 @@
 [
-    {
-        "title": "Bakeries",
-        "updated": "2018-05-07T06:05:29.351Z",
-        "data": [
             {
                 "name": "alki bakery",
                 "neighborhood": "georgetown",
@@ -256,5 +252,3 @@
                 "item": "About the Item: The raspberry crown has a similar texture and consistency to the Kouign Amann but with gorgeous plump raspberries crowning the top giving this rich treat a nice fresh balance."
             }
         ]
-    }
-]
