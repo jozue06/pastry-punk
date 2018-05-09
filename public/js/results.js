@@ -25,7 +25,6 @@ if (localStorage.searchKey)
 
     resultImg.src = parsedArray[i].minibottom;
     a.setAttribute('href', 'store.html');
-    console.log(parsedArray[i].name);
     resultImg.setAttribute('id' , parsedArray[i].name);
     a.appendChild(resultImg);
     storeImg.appendChild(a);

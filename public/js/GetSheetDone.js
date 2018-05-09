@@ -269,7 +269,6 @@ function eventListenFunction(event) {
   var resultsArr = [];
   for (var i = 0; i < allStores[0].data.length; i++) {
     if (allStores[0].data[i].name.includes(searchKey) || allStores[0].data[i].locationtype.includes(searchKey) || allStores[0].data[i].neighborhood.includes(searchKey) || allStores[0].data[i].menu.includes(searchKey)) {
-      console.log('true ' + searchKey);
       resultsArr.push(allStores[0].data[i]);
     }
     var strItems = JSON.stringify(resultsArr);
@@ -278,8 +277,7 @@ function eventListenFunction(event) {
   }
 
 
-  console.log('Your search was ' + searchKey);
-  console.log(searchKey);
+
   event.target.searchKey.value = null;
 
   return searchKey;
