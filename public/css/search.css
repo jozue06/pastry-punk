@@ -65,14 +65,14 @@ bottom:0;
 }
 
 #container{
-padding-left: 50px;
-width: 50px;
+padding-left: 5%;
+width: 5%;
 
 }
 #container img{
-width: 250px;   
-height: 250px;
-margin-bottom: 50px;
+width: 450%;   
+height: 450%;
+margin-bottom: 250%;
 box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
@@ -98,7 +98,7 @@ animation-iteration-count: infinite;
 }
 
 p{
-font-size: 26px;
+font-size: 60%;
 text-transform: capitalize;
 font-family: 'Montserrat', sans-serif;
 
@@ -118,6 +118,7 @@ h1 {
 text-transform: capitalize;
 font-family: 'Montserrat', sans-serif;
 margin-left: 20%;
+font-size: 180%;
 }
 
 
